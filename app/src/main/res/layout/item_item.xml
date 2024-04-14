@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@android:color/transparent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="0dp"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:elevation="2dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,99 +24,101 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                app:cardCornerRadius="12dp"
+            <ImageView
+                android:id="@+id/foodimage"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="26dp"
+                android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:id="@+id/foodimage"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/biryani" />
-            </androidx.cardview.widget.CardView>
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/lato"
-                android:text="Spacy fresh biryani"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
-                app:layout_MarginStart="16dp"
-                app:layout_constraintStart_toEndOf="@+id/cardView8"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
+                android:id="@+id/Foodname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginBottom="4dp"
                 android:fontFamily="@font/lato"
-                android:text="199 ₹"
-                android:textSize="16sp"
-                android:textColor="@color/Red"
-                app:layout_MarginStart="16dp"
-                app:layout_constraintBottom_toBottomOf="@+id/cardView8"
-                app:layout_constraintStart_toEndOf="@+id/cardView8" />
-
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/baseline_horizontal_rule_24"
-                app:layout_constraintBottom_toBottomOf="@+id/textView8"
-                app:layout_constraintEnd_toStartOf="@+id/textView8"
-                app:layout_constraintTop_toTopOf="@+id/textView8"
-                app:layout_constraintVertical_bias="0.888" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:text="10"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton"
-                app:layout_constraintTop_toTopOf="@+id/imageButton"
-                app:layout_constraintVertical_bias="0.666" />
-
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_goneMarginEnd="8dp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/baseline_add_24"
+                android:text="TextView"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/foodPrice"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/foodimage"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageButton
+            <TextView
+                android:id="@+id/foodPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/transparent"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/lato"
+                android:text="TextView"
+                android:textColor="#EC0909"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.473"
-                app:layout_constraintStart_toStartOf="@+id/imageButton2"
-                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/foodimage"
+                app:layout_constraintTop_toBottomOf="@+id/Foodname" />
+
+            <ImageButton
+                android:id="@+id/minusbutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="156dp"
+                android:contentDescription="Minus"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_horizontal_rule_24"
+                app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+                app:layout_constraintStart_toEndOf="@+id/foodimage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/quantitytextview"
+                android:layout_width="21dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="20dp"
+                android:text="1"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+                app:layout_constraintStart_toEndOf="@+id/minusbutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.75" />
+
+            <ImageButton
+                android:id="@+id/plusbutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Plus"
+                android:src="@drawable/baseline_add_24"
+                app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/quantitytextview"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="36dp"
+                android:contentDescription="Delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.724"
+                app:layout_constraintStart_toStartOf="@+id/minusbutton"
                 app:srcCompat="@android:drawable/ic_menu_delete" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

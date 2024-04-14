@@ -1,15 +1,13 @@
 package com.example.quickbitesadminpanel
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.quickbitesadminpanel.databinding.ActivityAdditemBinding
 
-class additem : AppCompatActivity() {
+class Additem : AppCompatActivity() {
     private val binding: ActivityAdditemBinding by lazy {
         ActivityAdditemBinding.inflate(layoutInflater)
     }
@@ -24,12 +22,12 @@ class additem : AppCompatActivity() {
 
 
         binding.backbutton.setOnClickListener {
-            finish()
+            val intent= Intent(this,AdminPage::class.java)
+            startActivity(intent)
         }
 
-
         }
-    val pickimage= registerForActivityResult(ActivityResultContracts.PickVisualMedia())
+    private val pickimage= registerForActivityResult(ActivityResultContracts.PickVisualMedia())
     { uri ->
         if(uri != null)
         {

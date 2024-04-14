@@ -8,13 +8,12 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".Login_Page"
-    android:background="@color/Green">
+    android:background="@color/lavendar">
 
     <ImageView
         android:id="@+id/quick"
-        android:layout_width="223dp"
-        android:layout_height="147dp"
-        android:layout_weight="1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         app:srcCompat="@drawable/quickbites" />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context=".allitemactivity">
+    tools:context=".Allitemactivity">
     <ImageView
-        android:id="@+id/backbutton"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:id="@+id/backbutton1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
@@ -28,7 +28,7 @@
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/backbutton"
+        app:layout_constraintStart_toEndOf="@+id/backbutton1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView

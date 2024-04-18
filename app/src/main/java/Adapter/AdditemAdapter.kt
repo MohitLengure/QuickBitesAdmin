@@ -1,4 +1,4 @@
-package Adapter
+package adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -39,13 +39,13 @@ class AdditemAdapter(
                     increaseQuantity(position)
                 }
                 deleteButton.setOnClickListener {
-                    DeleteQuantity(position)
+                    deleteQuantity(position)
                 }
             }
         }
 
 
-        private fun DeleteQuantity(position: Int) {
+        private fun deleteQuantity(position: Int) {
             menuItemName.removeAt(position)
             menuItemPrice.removeAt(position)
             menuItemImage.removeAt(position)

@@ -12,12 +12,13 @@ class AdminPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
         binding.addMenu.setOnClickListener {
-            val intent= Intent(this,Additem::class.java)
-            startActivity(intent)
+           val intent1= Intent(this,AddItemActivity::class.java)
+           startActivity(intent1)
         }
         binding.allItemMenu.setOnClickListener {
-            val intent= Intent(this,Allitemactivity::class.java)
+            val intent= Intent(this,AllItemActy::class.java)
             startActivity(intent)
         }
     }

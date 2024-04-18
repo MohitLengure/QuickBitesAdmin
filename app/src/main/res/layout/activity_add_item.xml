@@ -48,7 +48,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/FoodName"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="10dp"
@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
             <EditText
-                android:id="@+id/food_price"
+                android:id="@+id/foodPrice"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="14dp"
@@ -79,10 +79,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/FoodName" />
 
             <TextView
-                android:id="@+id/Select_image"
+                android:id="@+id/Selectimage"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="16dp"
@@ -94,8 +94,8 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/food_price"
-                app:layout_constraintTop_toBottomOf="@+id/food_price" />
+                app:layout_constraintStart_toStartOf="@+id/foodPrice"
+                app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView4"
@@ -103,12 +103,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="15dp"
-                app:layout_constraintEnd_toEndOf="@+id/Select_image"
-                app:layout_constraintStart_toStartOf="@+id/Select_image"
-                app:layout_constraintTop_toBottomOf="@+id/Select_image">
+                app:layout_constraintEnd_toEndOf="@+id/Selectimage"
+                app:layout_constraintStart_toStartOf="@+id/Selectimage"
+                app:layout_constraintTop_toBottomOf="@+id/Selectimage">
 
                 <ImageView
-                    android:id="@+id/SelectedImage"
+                    android:id="@+id/Selectedimage"
                     android:layout_width="175dp"
                     android:layout_height="110dp"
                     android:scaleType="fitCenter"
@@ -128,9 +128,9 @@
                 android:paddingLeft="15dp"
                 android:text="Short Description"
                 android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="@+id/Select_image"
-                app:layout_constraintStart_toEndOf="@+id/Select_image"
-                app:layout_constraintStart_toStartOf="@+id/Select_image"
+                app:layout_constraintEnd_toEndOf="@+id/Selectimage"
+                app:layout_constraintStart_toEndOf="@+id/Selectimage"
+                app:layout_constraintStart_toStartOf="@+id/Selectimage"
                 app:layout_constraintTop_toBottomOf="@+id/cardView4"
                 app:layout_goneMarginStart="8dp" />
 
@@ -157,7 +157,7 @@
                 android:fontFamily="@font/lato"
                 android:gravity="center_vertical"
                 android:paddingLeft="15dp"
-                android:text="Short Description"
+                android:text="@string/ingredient"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/description"

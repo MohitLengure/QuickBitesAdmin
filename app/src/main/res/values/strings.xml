@@ -32,4 +32,6 @@
     <string name="delete">Delete</string>
     <string name="plus">Plus</string>
     <string name="all_item">All Item</string>
+    <string name="out_for_delivery">Out For Delivery</string>
+    <string name="ingredient">Ingredient</string>
 </resources>

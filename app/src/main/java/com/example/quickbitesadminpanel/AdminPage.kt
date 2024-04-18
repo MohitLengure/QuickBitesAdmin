@@ -21,5 +21,10 @@ class AdminPage : AppCompatActivity() {
             val intent= Intent(this,AllItemActy::class.java)
             startActivity(intent)
         }
+        binding.OrderDispatch.setOnClickListener {
+            val intent= Intent(this,OutForDeliveryActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

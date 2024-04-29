@@ -1,26 +1,36 @@
 {
   "project_info": {
-    "project_number": "1070713132649",
-    "project_id": "adminquickbites",
-    "storage_bucket": "adminquickbites.appspot.com"
+    "project_number": "750864028488",
+    "project_id": "quickbites-e0199",
+    "storage_bucket": "quickbites-e0199.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1070713132649:android:b400f3acc45d66581774f8",
+        "mobilesdk_app_id": "1:750864028488:android:8dfe9385373be04166997d",
         "android_client_info": {
-          "package_name": "com.example.quickbitesadminpanel"
+          "package_name": "com.example.quickbites"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "750864028488-jepim7osdlci8cuitt67nvp3co85jn4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtkRd7wsEUaFLRuTJPZwX7TgyfoIg3fY4"
+          "current_key": "AIzaSyBe_rstuLGEUOMLmUBHdpamNoEz0IqfhuM"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750864028488-jepim7osdlci8cuitt67nvp3co85jn4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

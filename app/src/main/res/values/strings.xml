@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">QuickbitesAdminpanel</string>
+    <string name="app_name">QuickBites</string>
+
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <string name="profile">Profile</string>
@@ -28,10 +33,4 @@
     <string name="recent_buy">Recent Buy</string>
     <string name="buy_again">Buy Again</string>
     <string name="save_information">Save Information</string>
-    <string name="minus">Minus</string>
-    <string name="delete">Delete</string>
-    <string name="plus">Plus</string>
-    <string name="all_item">All Item</string>
-    <string name="out_for_delivery">Out For Delivery</string>
-    <string name="ingredient">Ingredient</string>
 </resources>
